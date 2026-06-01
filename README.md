@@ -82,12 +82,7 @@ The model is gated. You need to:
 
 1. Request access at [meta-llama/Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)
 2. Create a HuggingFace token at [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
-3. Authenticate before running:
-
-```python
-import os
-os.environ["HF_TOKEN"] = "your_token_here"
-```
+3. Authenticate
 
 ### Running on Google Colab (recommended — free T4 GPU)
 
@@ -98,7 +93,7 @@ os.environ["HF_TOKEN"] = "your_token_here"
 ```
 3. Set your HF token, then run any script:
 ```python
-!python day1_crescendo_harness.py
+!python crescendo_harness.py
 !python defense1_semantic_drift.py
 !python defense2_context_reset.py
 ```
