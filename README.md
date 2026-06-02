@@ -68,42 +68,6 @@ Targets the memory-stacking mechanism directly:
 
 ---
 
-## Setup
-
-### Requirements
-
-```bash
-pip install -r requirements.txt
-```
-
-### Model Access
-
-The model is gated. You need to:
-
-1. Request access at [meta-llama/Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)
-2. Create a HuggingFace token at [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
-3. Authenticate
-
-### Running on Google Colab (recommended — free T4 GPU)
-
-1. `Runtime → Change runtime type → T4 GPU`
-2. Install dependencies:
-```python
-!pip install -r requirements.txt -q
-```
-3. Set your HF token, then run any script:
-```python
-!python crescendo_harness.py
-!python defense1_semantic_drift.py
-!python defense2_context_reset.py
-```
-
-Results are saved to `results/baseline/`, `results/defense1/`, and `results/defense2/` as JSON files after each scenario.
-
-**Expected runtime per script:** ~30–45 minutes on a T4 GPU.
-
----
-
 ## Attack Scenarios
 
 10 Crescendo attack scenarios across 5 harm categories, each with 4 escalating turns:
