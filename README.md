@@ -39,7 +39,7 @@ This project builds a controlled evaluation harness around **Llama-3.2-3B-Instru
 
 ```
 crescendo-defense-llm/
-├── day1_crescendo_harness.py      # Baseline: undefended attack runner
+├── crescendo_harness.py      # Baseline: undefended attack runner
 ├── defense1_semantic_drift.py     # Defense 1: semantic drift + toxicity filtering
 ├── defense2_context_reset.py      # Defense 2: context reset + intent classification
 ├── requirements.txt               # Python dependencies
